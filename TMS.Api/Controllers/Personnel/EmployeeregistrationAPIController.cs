@@ -9,6 +9,7 @@ using TMS.Model.ViewModel;
 using TMS.Model.Entity;
 using Microsoft.AspNetCore.Authorization;
 using TMS.Common.MyFilters;
+using TMS.Model.Entity.Personnel;
 
 namespace TMS.API.Controllers.Personnel.Employeeregistration
 {
@@ -54,13 +55,47 @@ namespace TMS.API.Controllers.Personnel.Employeeregistration
         /// <summary>
         /// 人事模块—员工登记—添加API
         /// </summary>
-        /// <param name="userModel"></param>
+        /// <param name="model"></param>
         /// <returns></returns>
-        [Route(nameof(AddEmployeeRegistrations))]
+        [Route(nameof(AddEmployee))]
         [HttpPost]
-        public async Task<IActionResult> AddEmployeeRegistrations(UserModel userModel)
+        public async Task<IActionResult> AddEmployee(EmployeeModel model)
         {
-            return Ok( await _employeeregistration.AddEmployeeRegistrations(userModel));
+            return Ok( await _employeeregistration.AddEmployee(model));
         }
+
+        /// <summary>
+        /// 人事模块—员工登记—删除（假删）
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost,Route("DelEmployee")]
+        public async Task<IActionResult> DelEmployee(string id)
+        {
+            return Ok(await _employeeregistration.DelEmployee(id));
+        }
+
+        /// <summary>
+        /// 人事模块—员工登记—反填
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet, Route("EditEmployee")]
+        public async Task<IActionResult> EditEmployee(int id)
+        {
+            return Ok(await _employeeregistration.EditEmployee(id));
+        }
+
+        /// <summary>
+        /// 人事模块—员工登记—修改
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost, Route("UpdEmployee")]
+        public async Task<IActionResult> UpdEmployee(EmployeeModel model)
+        {
+            return Ok(await _employeeregistration.UpdEmployee(model));
+        }
+
     }
 }

@@ -385,11 +385,32 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:TMS.API.Controllers.Personnel.Employeeregistration.EmployeeregistrationAPIController.AddEmployeeRegistrations(TMS.Model.Entity.UserModel)">
+        <member name="M:TMS.API.Controllers.Personnel.Employeeregistration.EmployeeregistrationAPIController.AddEmployee(TMS.Model.Entity.Personnel.EmployeeModel)">
             <summary>
             人事模块—员工登记—添加API
             </summary>
-            <param name="userModel"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TMS.API.Controllers.Personnel.Employeeregistration.EmployeeregistrationAPIController.DelEmployee(System.String)">
+            <summary>
+            人事模块—员工登记—删除（假删）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TMS.API.Controllers.Personnel.Employeeregistration.EmployeeregistrationAPIController.EditEmployee(System.Int32)">
+            <summary>
+            人事模块—员工登记—反填
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TMS.API.Controllers.Personnel.Employeeregistration.EmployeeregistrationAPIController.UpdEmployee(TMS.Model.Entity.Personnel.EmployeeModel)">
+            <summary>
+            人事模块—员工登记—修改
+            </summary>
+            <param name="model"></param>
             <returns></returns>
         </member>
         <member name="T:TMS.API.Controllers.Personnel.HiredToHandlerAPIController">
