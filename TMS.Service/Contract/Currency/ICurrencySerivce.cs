@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TMS.Model.Entity.Vindicate;
+using TMS.Model.Entity.Contract;
 
-namespace TMS.Service.VehicleService.Maintain
+namespace TMS.Service.Contract.Currency
 {
-    public interface IUpkeepRecordsService
+    public interface ICurrencySerivce
     {
-
         /// <summary>
-        /// 保养记录显示
+        /// 通用合同显示
         /// </summary>
         /// <returns></returns>
-        Task<List<UpkeepRecord>> GetUpkeepRecords();
+        Task<List<CommonContract>> GetCommons();
     }
 }

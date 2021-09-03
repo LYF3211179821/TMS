@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TMS.Model.Entity.Vindicate;
+using TMS.Model.Entity.Contract;
 
-namespace TMS.Service.VehicleService.Maintain
+namespace TMS.IRepository.Contract
 {
-    public interface IUpkeepRecordsService
+    public interface ICargoOwnerRepository
     {
-
         /// <summary>
-        /// 保养记录显示
+        /// 货主合同显示
         /// </summary>
         /// <returns></returns>
-        Task<List<UpkeepRecord>> GetUpkeepRecords();
+        Task<List<OwnerOfCargoContract>> GetCargoContracts();
+
     }
 }

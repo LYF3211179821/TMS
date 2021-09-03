@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TMS.Model.Entity.Vindicate;
+using TMS.Model.Vindicate;
 
-namespace TMS.Service.VehicleService.Maintain
+namespace TMS.Service.VehicleService.Cost
 {
-    public interface IUpkeepRecordsService
+    public interface ICostRecordService
     {
-
         /// <summary>
-        /// 保养记录显示
+        /// 费用记录显示
         /// </summary>
         /// <returns></returns>
-        Task<List<UpkeepRecord>> GetUpkeepRecords();
+        Task<List<CostRecord>> GetCosts();
     }
 }

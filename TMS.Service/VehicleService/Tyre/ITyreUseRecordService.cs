@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TMS.Model.Entity.Vindicate;
-namespace TMS_Logistics.IRepository
+
+namespace TMS.Service.VehicleService.Tyre
 {
-    /// <summary>
-    /// 保养记录
-    /// </summary>
-    public interface IUpkeepRecordsRepository
+    public interface ITyreUseRecordService
     {
         /// <summary>
-        /// 保养记录显示
+        /// 轮胎记录
         /// </summary>
         /// <returns></returns>
-        Task<List<UpkeepRecord>> GetUpkeepRecords();
+        Task<List<TyreUseRecord>> GetTyres();
     }
 }

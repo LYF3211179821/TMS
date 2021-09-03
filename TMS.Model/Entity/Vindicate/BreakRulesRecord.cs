@@ -37,7 +37,7 @@ namespace TMS.Model.Entity.Entity.Vindicate
         /// <summary>
         /// 违章日期
         /// </summary>
-        public DateTime? BreakRulesTime { get; set; }
+        public DateTime BreakRulesTime { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
@@ -50,5 +50,7 @@ namespace TMS.Model.Entity.Entity.Vindicate
         /// 违章状态
         /// </summary>
         public int? BreakRulesStatus { get; set; }
+
+
     }
 }

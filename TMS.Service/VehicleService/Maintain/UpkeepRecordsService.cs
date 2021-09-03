@@ -17,30 +17,13 @@ namespace TMS.Service.VehicleService.Maintain
             _upkeep = upkeep;
         }
 
-
-        public int UpkeepRecordsAdd(UpkeepRecord obj)
+        /// <summary>
+        /// 保养记录显示
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<UpkeepRecord>> GetUpkeepRecords()
         {
-            return _upkeep.UpkeepRecordsAdd(obj);
-        }
-
-        public int UpkeepRecordsDel(string UpkeepRecordID)
-        {
-            return _upkeep.UpkeepRecordsDel(UpkeepRecordID);
-        }
-
-        public UpkeepRecord UpkeepRecordsDetails(int UpkeepRecordID)
-        {
-            return _upkeep.UpkeepRecordsDetails(UpkeepRecordID);
-        }
-
-        public List<UpkeepRecord> UpkeepRecordsList(string UpkeepRecordName, string UpkeepRecordNowTime, string LicensePlateNumber)
-        {
-            return _upkeep.UpkeepRecordsList(UpkeepRecordName, UpkeepRecordNowTime, LicensePlateNumber);
-        }
-
-        public int UpkeepRecordsUpd(UpkeepRecord obj)
-        {
-            return _upkeep.UpkeepRecordsUpd(obj);
+            return await _upkeep.GetUpkeepRecords();
         }
     }
 }

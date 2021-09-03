@@ -242,6 +242,39 @@
             <param name="model">车辆信息</param>
             <returns></returns>
         </member>
+        <member name="T:TMS.Api.Controllers.Contract.CargoOwnerAPIController">
+            <summary>
+            合同管理-货主合同
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.Contract.CargoOwnerAPIController.GetCargoContracts">
+            <summary>
+            货主合同显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.Contract.CarryAPIController">
+            <summary>
+            合同管理-承运合同
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.Contract.CarryAPIController.GetAccepts">
+            <summary>
+            承运合同显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.Contract.CurrencyAPIController">
+            <summary>
+            合同管理-通用合同
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.Contract.CurrencyAPIController.GetCommons">
+            <summary>
+            通用合同显示
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:TMS.Api.Controllers.Personnel.KanbanAPIController">
             <summary>
             人事管理-看板API
@@ -324,6 +357,64 @@
         <member name="M:TMS.Api.Controllers.Setting.RoleAPIController.GetValue">
             <summary>
             11
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.VehicleService.AccidentAPIController">
+            <summary>
+            服务-事故记录API
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.VehicleService.AccidentAPIController.GetAccidentRecords(System.String,System.Nullable{System.DateTime},System.String)">
+            <summary>
+            显示事故记录
+            </summary>
+            <param name="title"></param>
+            <param name="date"></param>
+            <param name="carNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.VehicleService.CostAPIController">
+            <summary>
+            服务-费用记录API
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.VehicleService.CostAPIController.GetCosts">
+            <summary>
+            费用显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.VehicleService.RepairAPIController">
+            <summary>
+            服务-维修记录API
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.VehicleService.RepairAPIController.GetMaintainRecords">
+            <summary>
+            显示维修记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.VehicleService.TyreAPIController">
+            <summary>
+            服务-轮胎记录API
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.VehicleService.TyreAPIController.GetTyres">
+            <summary>
+            轮胎记录显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.Api.Controllers.VehicleService.ViolationAPIController">
+            <summary>
+            服务-违章记录API
+            </summary>
+        </member>
+        <member name="M:TMS.Api.Controllers.VehicleService.ViolationAPIController.GetBreakRules">
+            <summary>
+            违章记录显示
             </summary>
             <returns></returns>
         </member>
@@ -525,6 +616,17 @@
             刷新Token令牌
             </summary>
             <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TMS.API.Controllers.UpkeepRecordAPIController">
+            <summary>
+            服务-保养记录API
+            </summary>
+        </member>
+        <member name="M:TMS.API.Controllers.UpkeepRecordAPIController.GetUpkeepRecords">
+            <summary>
+            保养记录显示
+            </summary>
             <returns></returns>
         </member>
     </members>
